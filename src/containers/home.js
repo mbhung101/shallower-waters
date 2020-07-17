@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Menu } from 'semantic-ui-react'
 import MenuTop from '../components/menutop'
+import { Route, BrowserRouter } from 'react-router-dom'
+
 
 class Home extends Component {
 
@@ -11,9 +13,11 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
-
-      </div>
+      <BrowserRouter>
+        <div>
+          <MenuTop/>
+        </div>
+      </BrowserRouter>
     );
   }
 }

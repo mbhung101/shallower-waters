@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react'
 
 export default class MenuTop extends Component {
@@ -12,11 +12,11 @@ export default class MenuTop extends Component {
     return (
       <Menu>
         <Menu.Item
-          name='editorials'
-          active={activeItem === 'editorials'}
+          name='home'
+          active={activeItem === 'home'}
           onClick={this.handleItemClick}
         >
-          Editorials
+          Home
         </Menu.Item>
 
         <Menu.Item
@@ -28,12 +28,22 @@ export default class MenuTop extends Component {
         </Menu.Item>
 
         <Menu.Item
-          name='upcomingEvents'
-          active={activeItem === 'upcomingEvents'}
+          name='replays'
+          active={activeItem === 'replays'}
           onClick={this.handleItemClick}
         >
-          Upcoming Events
+          My Replays
         </Menu.Item>
+
+        <Menu.Item
+          name='user'
+          active={activeItem === 'user'}
+          onClick={this.handleItemClick}
+          position={"right"}
+        >
+          User
+        </Menu.Item>
+
       </Menu>
     )
   }
